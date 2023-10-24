@@ -1,2 +1,10 @@
 #!/bin/bash
-printf "%x" $DECIMAL
+
+# Check if the DECIMAL variable is set
+if [ -z "$DECIMAL" ]; then
+  echo "DECIMAL variable is not set."
+  exit 1
+fi
+
+# Convert DECIMAL to hexadecimal and print it
+printf "%x\n" "$DECIMAL"
