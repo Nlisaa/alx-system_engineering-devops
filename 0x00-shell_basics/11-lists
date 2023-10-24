@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -AlF ~ /boot / | grep -v '^total'
+ls -AlF . .. /boot/ | grep -v '^total'
